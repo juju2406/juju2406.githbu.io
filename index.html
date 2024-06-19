@@ -43,11 +43,9 @@
 				<!-- Banner -->
 					<section id="banner" class="major">
 						<div class="inner">
-
 							<span class="image">
 								<img src="images/櫻花.jpg" alt="" />
-							</span>				 
-
+							</span>		
 							<header class="major">
 								<h1>Ju的室內設計作品</h1>																		
 							</header>
@@ -130,7 +128,7 @@
 									</header>
 									<p>滿滿的綠色，通過綠色建築標章，可以看起來很厲害</p>
 									<ul class="actions">
-										<li><a href="https://gb.tabc.org.tw/" class="button next">前往綠建築標章網站</a></li>
+										<li><a href="https://gb.tabc.org.tw/" target="_blank" class="button next">前往綠建築標章網站</a></li> /* target另開網頁 */
 									</ul>
 								</div>
 							</section>
@@ -141,7 +139,8 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+
+								<form method="post" action="#" onsubmit="return mailto()">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">名稱</label>
@@ -160,6 +159,17 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
+
+									<script>
+										function mailto() {
+											name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+											email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+											message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+											window.location.href = "mailto:a0938520520@gmail.com?subject=我有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+											return false;
+										}
+									</script>
+									
 								</form>
 							</section>
 							<section class="split">

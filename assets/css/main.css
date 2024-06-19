@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #247744;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1913,7 +1913,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
+		background: rgba(212, 212, 255, 0.4);
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -2522,7 +2522,7 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8em;
+		font-size: 1.2em;
 		font-weight: 600;
 		height: 3.5em;
 		letter-spacing: 0.25em;
@@ -3952,3 +3952,14 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+
+
+		#two {
+			background-color: darkorange;  /* aaron: 修改首頁下方區塊背景顏色 */
+		}
+
+
+
+
