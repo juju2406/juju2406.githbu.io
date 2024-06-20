@@ -3952,13 +3952,13 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
-
-
-
-
 		#two {
 			background-color: darkorange;  /* aaron: 修改首頁下方區塊背景顏色 */
 		}
+
+.my.banner{
+    color: #37a6cb;
+}
 
 
 
